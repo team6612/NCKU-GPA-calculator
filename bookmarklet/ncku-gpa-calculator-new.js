@@ -111,7 +111,7 @@
                          "<tr><td>哲學與藝術</td><td>"+ coreGen[3] +"</td><td>生命科學與健康</td><td>"+ crossGen[3] +"</td></tr>"+
                          "<tr><td>-</td><td>-</td><td>科際整合</td><td>"+ crossGen[4] +"</td></tr>";
 
-            var calc0 = "<h3>已選擇學分數: <strong id='calc'>0</strong></h3>"
+            var calc0 = "<h3>已選擇學分數: <span id='calc'>0</span> <small>(選取下面的選擇框，選到的課學分加總會顯示在這)</small></h3>"
 
             var table = ""
             var thead = "<tr><th></th><th>課程名稱</th><th>必/選修</th><th>分數</th><th>GPA</th><th>學分</th><th>GPA*學分</th><th>等第</th><th>通識</th></tr>";
@@ -139,8 +139,8 @@
             $('body').append("<div id='my-score'><button id='close'>close</button>"
                                 + header
                                 + "<h4>Total GPA: " + gpaTotal + " / Total credit: " + creditTotal + "</h4>"
-                                + "<h4>必修 (系上/通識): " + requiredCredit + " (" + deptRequiredCredit + "/" + genCredit + ")</h4>"
-                                + "<h4>選修 (系上/外系): " + electCredit + " (" + inElect + "/" + crossElect + ")</h4>"
+                                + "<h4>已修必修 (系上/通識): " + requiredCredit + " (" + deptRequiredCredit + "/" + genCredit + ")</h4>"
+                                + "<h4>已修選修 (系上/外系): " + electCredit + " (" + inElect + "/" + crossElect + ")</h4>"
                                 + "<table class='myTable'>"
                                 + thead0
                                 + tbody0
